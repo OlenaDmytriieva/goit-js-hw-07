@@ -11,7 +11,6 @@ const boxesEl = document.querySelector("#boxes");
 
 const destroyElements = () => {
   const boxesToDestroy = document.querySelectorAll(".box");
-  inputEl.value = "";
   boxesToDestroy.forEach((box) => box.remove());
 };
 
@@ -19,11 +18,8 @@ destroyBtnEl.addEventListener("click", () => {
   destroyElements();
 });
 
-inputEl.addEventListener("click", () => {
-  destroyElements();
-});
-
 createBtnEl.addEventListener("click", () => {
+  destroyElements();
   const boxesArr = [];
   let boxWidth = 30;
   let boxHeight = 30;
