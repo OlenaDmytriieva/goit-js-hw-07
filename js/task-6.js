@@ -42,5 +42,5 @@ createBtnEl.addEventListener("click", () => {
     }
   }
   boxesEl.append(...boxesArr);
-  // inputEl.value = "";
+  inputEl.value = "";
 });
