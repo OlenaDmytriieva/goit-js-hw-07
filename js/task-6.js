@@ -23,8 +23,9 @@ createBtnEl.addEventListener("click", () => {
   const boxesArr = [];
   let boxWidth = 30;
   let boxHeight = 30;
-  if (+inputEl.value.trim() >= 1 && +inputEl.value.trim() <= 100) {
-    for (let i = 1; i <= +inputEl.value.trim(); i++) {
+  let inputTrimmed = +inputEl.value.trim();
+  if (inputTrimmed >= 1 && inputTrimmed <= 100) {
+    for (let i = 1; i <= inputTrimmed; i++) {
       const boxItem = document.createElement("div");
       boxItem.setAttribute(
         "style",
